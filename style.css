@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.header button {
+    background: #d4d4d4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.header button:hover {
+    background: #ab9b9b;
+}
+
+.header select {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
+
+.container .list-box {
+    flex: 1;
+    padding: 20px;
+}
+
+#newsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#newsList li * {
+    pointer-events: none;
+    text-align: center;
+}
+
+#newsList li img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+#newsList li span {
+    flex: 1;
+}
+
+#newsList li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 3px 7px 10px #ddd;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+#newsList li:hover {
+
+    background-color: azure;
+
+}
+
+
+#details {
+    max-width: 30%;
+    padding: 20px;
+}
+
+#searching {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+#clearDetails {
+    background-color: beige;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    margin-left: auto;
+    border: solid 1px #ccc;
+    width: 20px;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+#clearDetails:hover{
+    cursor: pointer;
+    background-color: #ab9b9b;
+    transition: all 1s ease-in-out;
+    color: white;
+}
+.authorbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.timer{
+    text-align: right;
+}

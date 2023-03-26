@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>News</title>
+</head>
+<body>
+    <div class="header">
+        <label for="category">Choose a category:</label>
+
+        <select name="category" id="category">
+            <option value="all">All</option>
+            <option value="national">National</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="world">World</option>
+            <option value="politics">Politics</option>
+            <option value="technology">Technology</option>
+            <option value="startup">Startup</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="miscellaneous">Miscellaneous</option>
+            <option value="hatke">Hatke</option>
+            <option value="science">Science</option>
+            <option value="automobile">Automobile</option>
+        </select>
+
+        <button id="search">Search</button>
+
+    </div>
+    <div class="container">
+        <p id="searching">Searching...</p>
+        <div class="list-box">
+            <ul id="newsList"></ul>
+
+        </div>
+        <div id="details"></div>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
